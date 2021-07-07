@@ -60,7 +60,7 @@ namespace MindNotes
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveFileDialog1.DefaultExt = ".txt";
-            saveFileDialog1.Filter = "Text File|*.txt|PDF file|*.pdf|Word File|*.doc";
+            saveFileDialog1.Filter = "Text File|*.txt|PDF file|*.pdf|Word File|*.doc|MindNotes File|*.mn";
             DialogResult dr = saveFileDialog1.ShowDialog();
             if (dr == DialogResult.OK)
             {
