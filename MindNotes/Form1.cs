@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 namespace MindNotes
 {
@@ -116,6 +117,13 @@ namespace MindNotes
             {
                 richTextBox1.ForeColor = colorDialog1.Color;
             }
+        }
+
+        private void supportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string command = "mailto:daniel.rockenschaub[@]outlook.com?subject=The Subject&bcc=daniel.rockenschaub[at]outlook.com";
+            Process.Start(command);
+            Process.Start("mailto:daniel.rockenschaub@outlook.com");
         }
     }
 }
